@@ -1,0 +1,149 @@
+.footer {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 25px;
+	&__howworks {
+
+	}
+	&__dealin {
+
+	}
+	.howworks {
+		width: 48%;
+		margin-right: 14px;
+		&__items {
+			display: flex;
+			justify-content: flex-start;
+			align-items: flex-start;
+		}
+		&__item {
+			max-width: 221px;
+			margin-right: 18px;
+			&:last-of-type {
+				margin-right: 0;
+			}
+		}
+		&__title {
+			font-size: 24px;
+			color: #df0000;
+			font-weight: bold;
+			margin-bottom: 10px;
+			max-width: 108px;
+		}
+		&__content {
+
+		}
+		&__wrap {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+			margin-bottom: 35px;
+			padding-right: 5px;
+		}
+		&__img {
+			margin-right: 30px;
+			width: 46px;
+			height: 40px;
+		}
+		&__text {
+			font-family: "Helvetica";
+			font-size: 14px;
+			color: #fff;
+			line-height: 18px;
+			flex-shrink: 1;
+			max-height: 72px;
+			overflow: hidden;
+			min-height: 72px;
+		}
+		&__link {
+
+		}
+	}
+	.dealin {
+		width: 48%;
+		display: flex;
+		justify-content: flex-start;
+		&__items {
+			margin-right: 18px;
+			max-width: 219px;
+			width: 100%;
+			&:last-of-type {
+				margin-right: 0;
+			}
+		}
+		&__item {
+
+		}
+		&__title {
+			font-size: 24px;
+			color: #ffe400;
+			font-weight: bold;
+			margin-bottom: 16px;
+		}
+		&__list {
+
+		}
+		&__text {
+			font-size: 14px;
+			color: #fff;
+			margin-bottom: 14px;
+			padding-bottom: 3px;
+			border-bottom: 1px solid rgba(80,41,42, 0.5);
+		}
+	}
+}
+
+@media(max-width: 991px) {
+	.footer {
+		.footbtn {
+			font-size: 12px;
+		}
+	}
+}
+
+@media(max-width: 769px) {
+	.footer {
+		flex-direction: column;
+		.howworks {
+			margin: 0 0 15px 0;
+			width: 100%;
+			&__items {
+				justify-content: center;
+			}
+		}
+		.dealin {
+			width: 100%;
+			justify-content: center;
+		}
+	}
+}
+
+@media(max-width: 550px) {
+	.footer {
+		padding-top: 15px;
+		.footbtn {
+			font-size: 15px;
+		}
+		.howworks {
+
+			&__items {
+				flex-direction: column;
+				align-items: center;
+			}
+			&__item {
+				max-width: 260px;
+				margin: 0 0 10px 0;
+				&:last-of-type {
+					
+				}
+			}
+			&__title {
+				max-width: initial;
+				margin-bottom: 10px;
+			}
+			&__wrap {
+				margin-bottom: 15px;
+			}
+		}
+	}
+}

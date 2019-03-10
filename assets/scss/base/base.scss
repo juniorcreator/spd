@@ -1,0 +1,141 @@
+main {
+	max-width: 	1920px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+body {
+	overflow-x: hidden;
+}
+* {
+	box-sizing: border-box;
+	font-size: 16px;
+	line-height: 1;
+	white-space: normal;
+}
+a {
+	display: inline-block;
+}
+a, a:active{
+	text-decoration: none;
+
+}
+img {
+	max-width: 100%;
+	display: inline-block;
+	
+}
+.mr10 {
+	margin-right: 10px;
+}
+.mb0 {
+
+}
+
+.content {
+	max-width: 963px;
+	width: 100%;
+	margin: 0 auto;
+}
+.elipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+a.bold{
+	font-weight: bold;
+}
+::placeholder {
+	color: #BFBFBF;
+	opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: #BFBFBF;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+	color: #BFBFBF;
+}
+.section {
+	&--top {
+		padding-top: 53px;
+		padding-bottom: 7px;
+		background-image: url(../img/smile.png), linear-gradient(to top, #550000 5%, #E30000 90%, #A50000 126%);
+		background-size: 2px;
+		border-bottom: 2px solid #703030;
+	}
+	&--mid {
+		background-color: #F1EFF1;
+		padding-bottom: 60px;
+	}
+	&--red {
+		height: 35px;
+		background-color: #DB0000;
+		background-image: url(../img/smile.png);
+		background-size: 2px;
+	}
+	&--footer {
+		min-height: 300px;
+		background-image: url(../img/smile.png), linear-gradient(to top, #000000 30%, #383838);
+		background-image: url(../img/smile.png), linear-gradient(to top, #000000, #383838);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#383838',GradientType=1);
+		background-size: 2px;
+		position: relative;
+		&:after {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 1px;
+			background-color: #F1EFF1;
+			border-top: 1px solid #121212;
+		}
+	}
+}
+
+@media(max-width: 1199px) {
+	.section {
+		padding-left: 15px;
+		padding-right: 15px;
+		&--top {
+		}
+		&--mid {
+
+		}
+		&--red {
+
+		}
+		&--footer {
+
+			&:after {
+
+			}
+		}
+	}
+}
+
+@media(max-width: 550px) {
+	.section {
+		&--top {
+		}
+		&--mid {
+    padding-bottom: 20px;
+		}
+		&--red {
+
+		}
+		&--footer {
+
+			&:after {
+
+			}
+		}
+	}
+	.mb0 {
+	margin-bottom: 0;
+}
+}
+// font-family: "Helvetica";
+// font-family: "Helvetica-Bold";
+// font-family: "Helvetica-light";
